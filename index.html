@@ -31,7 +31,174 @@
     <!-- Program Section -->
 
     <!-- FAQ -->
+    <section class="bg-gradient-to-b from-slate-900 to-slate-950 text-white py-16" id="faq">
+      <div class="max-w-4xl mx-auto px-4">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Pertanyaan Umum</h2>
+          <p class="text-slate-400 text-lg">Semua yang perlu Anda ketahui tentang Omoggle</p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Apa itu Omoggle?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Omoggle adalah platform battle mogging 1vs1 yang memungkinkan Anda berkompetisi dengan orang lain secara random. Anda akan di-matching dengan player lain untuk menunjukkan gaya dan kepercayaan diri Anda dalam format mogging yang seru dan fair.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Bagaimana cara bermain?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Cara bermainnya sederhana: 1) Daftar dan buat profil Anda, 2) Klik "Mulai Battle", 3) Sistem akan menemukan opponent untuk Anda, 4) Tunjukkan gaya dan kepercayaan diri Anda, 5) Pemilih akan memberikan rating untuk menentukan pemenang. Rating tertinggi dinyatakan sebagai pemenang battle!</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Apakah ada biaya untuk bergabung?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Tidak! Omoggle sepenuhnya gratis untuk bergabung dan bermain. Kami percaya bahwa semua orang harus memiliki kesempatan untuk menunjukkan gaya mereka tanpa biaya apapun. Cukup daftar dan mulai bermain sekarang!</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Bagaimana sistem rating bekerja?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Setiap battle memiliki panel pemilih yang akan menilai kedua peserta berdasarkan kepercayaan diri, gaya, dan overall mogging vibes. Rating dari pemilih akan dikombinasikan untuk menentukan pemenang. Semakin banyak battle yang Anda menangkan, semakin tinggi ranking Anda di leaderboard!</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Apakah ada reward untuk pemenang?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Ya! Pemenang battle akan mendapatkan poin yang dapat ditukarkan dengan badges eksklusif, special titles, dan akses ke tournament khusus. Semakin tinggi ranking Anda, semakin banyak reward yang bisa Anda dapatkan dari komunitas kami.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Bagaimana saya bisa melaporkan perilaku tidak sportif?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Kami memiliki sistem reporting yang ketat untuk menjaga komunitas tetap positif dan sportif. Jika Anda menemukan perilaku tidak pantas, gunakan tombol "Report" di akhir battle. Tim moderator kami akan meninjau laporan dan mengambil tindakan yang sesuai.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="border border-slate-700 rounded-lg overflow-hidden hover:border-blue-500 transition duration-300">
+            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50 transition duration-300" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold text-left">Bisakah saya bermain dengan teman-teman saya?</span>
+              <span class="text-blue-400 text-2xl transform transition duration-300">+</span>
+            </button>
+            <div class="faq-content hidden px-6 py-4 bg-slate-900/50 border-t border-slate-700">
+              <p class="text-slate-300">Saat ini Omoggle fokus pada battle random dengan matching system otomatis untuk pengalaman yang fair. Namun, kami sedang mengembangkan fitur "Challenge Friends" yang akan memungkinkan Anda menantang teman secara langsung. Nantikan peluncuran fitur ini segera!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <p class="text-slate-400 mb-4">Masih ada pertanyaan?</p>
+          <a href="#" class="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Hubungi Kami</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
+    <footer class="bg-gradient-to-b from-slate-900 to-slate-950 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <!-- Brand Section -->
+          <div>
+            <h3 class="text-2xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Brand</h3>
+            <p class="text-slate-400 text-sm">Menciptakan solusi terbaik untuk kebutuhan Anda</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li><a href="#" class="hover:text-blue-400 transition duration-300">Beranda</a></li>
+              <li><a href="#" class="hover:text-blue-400 transition duration-300">Tentang Kami</a></li>
+              <li><a href="#" class="hover:text-blue-400 transition duration-300">Layanan</a></li>
+              <li><a href="#" class="hover:text-blue-400 transition duration-300">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="text-blue-400">📧</span> info@brand.com
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-blue-400">📱</span> +62 XXX XXXX XXXX
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-blue-400">📍</span> Jakarta, Indonesia
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-slate-700 my-8"></div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+          <p>&copy; 2026 Brand. Semua hak dilindungi.</p>
+          <div class="flex gap-4 mt-4 md:mt-0">
+            <a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a>
+            <a href="#" class="hover:text-blue-400 transition duration-300">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
+  
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.text-blue-400');
+      
+      // Close all other open FAQs
+      document.querySelectorAll('.faq-content').forEach(item => {
+        if (item !== content) {
+          item.classList.add('hidden');
+          item.previousElementSibling.querySelector('.text-blue-400').classList.remove('rotate-45');
+        }
+      });
+      
+      // Toggle current FAQ
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-45');
+    }
+  </script>
 </html>
